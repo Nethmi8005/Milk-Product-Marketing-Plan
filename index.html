@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepeMilk - Pure. Healthy. Delicious.</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #87CEFA, #32CD32); /* Colorful background */
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: url('pepe1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 5px solid #FF6347; /* Colorful border */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+            z-index: 1;
+        }
+
+        .header img {
+            width: 150px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .header h1 {
+            font-size: 4.5em;
+            text-shadow: 3px 3px 5px rgba(189, 111, 72, 0.61);
+            z-index: 2; /* Ensure text is above overlay */
+        }
+
+        .cta a {
+            background-color: #FF6347;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 20px;
+            z-index: 2; /* Ensure button is above overlay */
+        }
+
+        .cta a:hover {
+            background-color: #FF4500;
+            transform: scale(1.05);
+        }
+
+        /* Main Content Area */
+        .main {
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #DCDCDC;
+        }
+
+        .section h2 {
+            color: #32CD32;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            border-bottom: 2px solid #32CD32;
+            padding-bottom: 10px;
+        }
+
+        .testimonials {
+            background: #e9f7ef;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            border: 2px solid #32CD32;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #32CD32;
+        }
+
+        .testimonial .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .testimonial .customer-name {
+            font-weight: bold;
+            color: #32CD32;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #FF6347, #32CD32); /* Colorful footer */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            font-weight: bold;
+            border-top: 5px solid #FF6347;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #FF4500; /* Color when hover */
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="pepe2.jpg" alt="PepeMilk">
+        <h1>Welcome to PepeMilk</h1>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h2>Why Choose PepeMilk?</h2>
+            <p>PepeMilk is pure, healthy, and delicious. Enriched with essential vitamins and nutrients, it is the perfect choice for a strong and active lifestyle.</p>
+        </section>
+
+        <section class="video-container">
+            <h2>Watch Our Promotional Video</h2>
+            <video width="100%" controls>
+                <source src="your-promotional-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="section">
+            <h2>Order Now</h2>
+            <ul>
+                <li>500ml Bottle - 450 LKR</li>
+                <li>1L Bottle - 850 LKR</li>
+                <li>1.5L Family Pack - 1200 LKR</li>
+                <li>200ml Small Pack - 250 LKR</li>
+            </ul>
+            <div class="cta">
+                <a onclick="orderNow()">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p class="quote">"PepeMilk is the best! My kids love it, and I know it's healthy for them."</p>
+                <p class="customer-name">- Sarah W., Colombo</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"Amazing taste and great quality. Highly recommend!"</p>
+                <p class="customer-name">- John D., Kandy</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"Best milk product I've ever tried! Will keep buying."</p>
+                <p class="customer-name">- Emma R., Galle</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PepeMilk. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/PepeMilk" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/PepeMilk" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/PepeMilk" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        function orderNow() {
+            alert("Thank you for your interest! Online ordering will be available soon.");
+        }
+    </script>
+</body>
+</html>
+
